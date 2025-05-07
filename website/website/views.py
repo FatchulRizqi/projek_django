@@ -2,6 +2,7 @@ from django.shortcuts import render
 
 def welcome(request):
     context= {
+        "title":"Ini adalah halaman",
         "links":[
             ["about/","About"],
             ["contact/", "Contact"]

@@ -6,9 +6,11 @@
     <title>About</title>
 </head>
 <body>
-    <h1>Ini adalah about</h1>
-    <a href="/">kembali ke home</a>
-    <a href="/contact/">kontak saya</a>
-    <a href="nomor/">nomer saya</a>
+    <h1>Ini tentang diriku</h1>
+    <ul>
+        {% for link,name in links %}
+            <li><a href="{{link}}">{{name}}</a></li>
+        {% endfor %}
+    </ul>
 </body>
 </html>

@@ -2,4 +2,10 @@ from django.shortcuts import render
 
 # Create your views here.
 def contact(request):
-    return render(request, 'kontak.html')
+    context= {
+        "links":[
+            ["/", "Home"],
+            ["/about/","About"]
+        ]
+    }
+    return render(request, 'contact/kontak.html',context)

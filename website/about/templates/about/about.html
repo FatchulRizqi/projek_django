@@ -1,4 +1,29 @@
-<!DOCTYPE html>
+{% extends "template.html" %}
+
+{% block judul %}
+<h2>{{title}}</h2>
+{% endblock judul %}
+
+{% block content-1 %}
+<h4>Aku jago matematika</h4>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ad blanditiis alias reiciendis rerum ipsam, quia ipsum cupiditate ullam voluptatem sapiente aliquid reprehenderit illum quidem nihil molestiae? Consequatur, inventore veritatis?</p>
+{% endblock content-1 %}
+
+{% block content-2 %}
+<h4>Aku suka bermain game</h4>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ad blanditiis alias reiciendis rerum ipsam, quia ipsum cupiditate ullam voluptatem sapiente aliquid reprehenderit illum quidem nihil molestiae? Consequatur, inventore veritatis?</p>
+{% endblock content-2 %}
+
+{% block content-3 %}
+<h4>Aku kaya raya dan juga cerdas</h4>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ad blanditiis alias reiciendis rerum ipsam, quia ipsum cupiditate ullam voluptatem sapiente aliquid reprehenderit illum quidem nihil molestiae? Consequatur, inventore veritatis?</p>
+{% endblock content-3 %}
+
+{% block footer %}
+<div class="footer">Hubungi kami</div>
+{% endblock footer %}
+
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -13,4 +38,4 @@
         {% endfor %}
     </ul>
 </body>
-</html>
+</html> -->

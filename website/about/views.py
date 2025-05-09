@@ -3,6 +3,7 @@ from django.shortcuts import render
 # Create your views here.
 def about(request):
     context= {
+        'title': "Tentang aku",
         "links":[
             ["/", "Home"],
             ["/contact/","Contact"],

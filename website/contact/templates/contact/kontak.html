@@ -1,4 +1,46 @@
-{% load static %}
+{% extends "template.html" %}
+
+{% block judul %}
+<h2>{{title}}</h2>
+{% endblock judul %}
+
+{% block content-1 %}
+<h4>Kontakku hilang</h4>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ad blanditiis alias reiciendis rerum ipsam, quia ipsum cupiditate ullam voluptatem sapiente aliquid reprehenderit illum quidem nihil molestiae? Consequatur, inventore veritatis?</p>
+{% endblock content-1 %}
+
+{% block content-2 %}
+<h4>Nomerku 0895422901348</h4>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ad blanditiis alias reiciendis rerum ipsam, quia ipsum cupiditate ullam voluptatem sapiente aliquid reprehenderit illum quidem nihil molestiae? Consequatur, inventore veritatis?</p>
+{% endblock content-2 %}
+
+{% block content-3 %}
+<h4>Kontakku mahal</h4>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ad blanditiis alias reiciendis rerum ipsam, quia ipsum cupiditate ullam voluptatem sapiente aliquid reprehenderit illum quidem nihil molestiae? Consequatur, inventore veritatis?</p>
+{% endblock content-3 %}
+
+{% block footer %}
+<div class="footer">Hubungi kami</div>
+{% endblock footer %}
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+</head>
+<body>
+    <h1>Ini tentang diriku</h1>
+    <ul>
+        {% for link,name in links %}
+            <li><a href="{{link}}">{{name}}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html> -->
+
+<!-- {% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,4 +57,4 @@
         {% endfor %}
     </ul>
 </body>
-</html>
+</html> -->

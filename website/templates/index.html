@@ -8,11 +8,37 @@
     <title>Home page</title>
 </head>
 <body>
-    <h1>{{title}} utama</h1>
-    <ul>
-        {% for link,name in links %}
-            <li><a href="{{link}}">{{name}}</a></li>
-        {% endfor %}
-    </ul>
+    <div class="navbar">
+        <div class="name-heading">
+            <h1 class="nama">Fatchul Rizqi</h1>
+        </div>
+        <ul>  
+            {% for link,name in links %}
+                <li><a href="{{link}}">{{name}}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <h2>Pengenalan tentang diriku</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus officiis, dolore vitae porro cum, laboriosam enim dolorem expedita architecto non doloribus quisquam voluptates quos quidem ducimus laborum itaque praesentium molestiae.
+    Repudiandae, voluptate? Nostrum, assumenda! Deserunt iusto necessitatibus nihil iste suscipit officia assumenda, enim eum cum dolorum non at sequi cumque soluta labore aperiam eligendi, doloremque ratione cupiditate nostrum! Nostrum, ex.
+    Hic fugit vero quam similique quae, aut praesentium! Quas rem explicabo molestiae quam ut ad perferendis omnis atque blanditiis? Magnam quidem unde atque consequuntur beatae ipsum quis vel facilis excepturi!
+    Id officia laboriosam, dolores repellat voluptatum odio sint temporibus, placeat, incidunt cupiditate qui alias enim sapiente odit atque. Earum veniam, ducimus beatae unde et rem excepturi natus illum ipsa eaque.
+    Adipisci excepturi alias, nostrum at ab culpa cum minus eius distinctio aperiam nisi pariatur eaque soluta voluptates officia inventore quae! Magnam nobis vel ipsum sint reprehenderit blanditiis eaque iste totam.</p>
+
+    <div class="col">
+        <h4>Python</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ad blanditiis alias reiciendis rerum ipsam, quia ipsum cupiditate ullam voluptatem sapiente aliquid reprehenderit illum quidem nihil molestiae? Consequatur, inventore veritatis?</p>
+    </div>
+    <div class="col">
+        <h4>Javascript</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ad blanditiis alias reiciendis rerum ipsam, quia ipsum cupiditate ullam voluptatem sapiente aliquid reprehenderit illum quidem nihil molestiae? Consequatur, inventore veritatis?</p>
+    </div>
+    <div class="col">
+        <h4>PHP</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ad blanditiis alias reiciendis rerum ipsam, quia ipsum cupiditate ullam voluptatem sapiente aliquid reprehenderit illum quidem nihil molestiae? Consequatur, inventore veritatis?</p>
+    </div>
+
+    <div class="footer">Hubungi kami</div>
 </body>
 </html>

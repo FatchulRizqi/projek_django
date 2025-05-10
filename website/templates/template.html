@@ -6,39 +6,54 @@
     <title>{{title}}</title>
 </head>
 <body>
-    <div class="navbar">
-        <div class="name-heading">
-            <h1 class="nama">Fatchul Rizqi</h1>
-        </div>
-        <ul>  
-            {% for link,name in links %}
-                <li><a href="{{link}}">{{name}}</a></li>
-            {% endfor %}
-        </ul>
+    <!-- HEADING START -->
+    <div class="heading">
+        <img src="" alt="Foto Rizki">
+        <h1 class="open-heading">Welcome to My website</h1>
     </div>
+    <ul>  
+        {% for link,name in links %}
+            <li><a href="{{link}}">{{name}}</a></li>
+        {% endfor %}
+    </ul>
 
-    {% block judul %}
-    {% endblock judul %}
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus officiis, dolore vitae porro cum, laboriosam enim dolorem expedita architecto non doloribus quisquam voluptates quos quidem ducimus laborum itaque praesentium molestiae.
-    Repudiandae, voluptate? Nostrum, assumenda! Deserunt iusto necessitatibus nihil iste suscipit officia assumenda, enim eum cum dolorum non at sequi cumque soluta labore aperiam eligendi, doloremque ratione cupiditate nostrum! Nostrum, ex.
-    Hic fugit vero quam similique quae, aut praesentium! Quas rem explicabo molestiae quam ut ad perferendis omnis atque blanditiis? Magnam quidem unde atque consequuntur beatae ipsum quis vel facilis excepturi!
-    Id officia laboriosam, dolores repellat voluptatum odio sint temporibus, placeat, incidunt cupiditate qui alias enim sapiente odit atque. Earum veniam, ducimus beatae unde et rem excepturi natus illum ipsa eaque.
-    Adipisci excepturi alias, nostrum at ab culpa cum minus eius distinctio aperiam nisi pariatur eaque soluta voluptates officia inventore quae! Magnam nobis vel ipsum sint reprehenderit blanditiis eaque iste totam.</p>
+    <!-- HEADING END -->
+
+    <!-- ABOUT START -->
+    {% block about %}
+    {% endblock about %}
+     <!-- ABOUT END -->
+    
 
     <div class="col">
-        {% block content-1 %}
-        {% endblock content-1 %}
+        {% block skill-1 %}
+        {% endblock skill-1 %}
     </div>
     <div class="col">
-        {% block content-2 %}
-        {% endblock content-2 %}
+        {% block skill-2 %}
+        {% endblock skill-2 %}
     </div>
     <div class="col">
-        {% block content-3 %}
-        {% endblock content-3 %}
+        {% block skill-3 %}
+        {% endblock skill-3 %}
     </div>
+    <div class="col">
+        {% block skill-4 %}
+        {% endblock skill-4 %}
+    </div>
+    <!-- MY SKILLS START -->
 
+
+
+
+    <!-- MY SKILLS END -->
     {% block footer %}
     {% endblock footer %}
+    <!-- FOOTER START -->
+
+
+
+
+    <!-- FOOTER END -->
 </body>
 </html>

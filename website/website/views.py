@@ -2,10 +2,11 @@ from django.shortcuts import render
 
 def welcome(request):
     context= {
-        "title":"Home Page",
+        "title":"My website",
         "links":[
-            ["about/","About"],
-            ["contact/", "Contact"]
+            ["#about","About me"],
+            ["#skills", "My Skills"],
+            ["#contact", "My Contact"],
         ]
     }
     return render(request,'index.html', context)

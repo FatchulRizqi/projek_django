@@ -1,65 +1,107 @@
 {% load static %}
-
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Fatchul Rizqi - Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{% static 'style.css' %}" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav>
-        <ul>
-            <li><a href="#about">About me</a></li>
-            <li><a href="#skills">My Skills</a></li>
-            <li><a href="#contact">My Contact</a></li>
-        </ul>
-        </nav>
-    </header>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
 
-    <section class="hero">
-        <div class="hero-text">
-        <h1>Welcome to My<br> <span>website</span></h1>
+    <nav class="navbar">
+        <div class="nav-brand">My Website</div>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
         </div>
-        <div class="hero-img">
-        <img src="{% static 'foto riski fixed.jpg' %}" alt="Fatchul Rizqi" />
+        <div class="theme-toggle">
+            <i class="fas fa-moon"></i>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="profile-container">
+                <div class="profile-image">
+                    <!-- Add your image here -->
+                    <img src="{% static 'foto riski fixed.jpg'%}" alt="Profile Picture">
+                </div>
+            </div>
+            <div class="intro-text">
+                <h1>Welcome to My Website</h1>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll Down</span>
+            <i class="fas fa-chevron-down"></i>
         </div>
     </section>
 
-    <section id="about" class="section">
-        <h2>Tentang Saya</h2>
-        <p>
-        Halooo semuanyaaa... Kenalin nih, namaku Fatchul Rizqi, bisa dipanggil Rizqi. Aku duduk di bangku SMA. Aku adalah seorang programmer yang memiliki ketertarikan tinggi terhadap teknologi AI...
-        Dulu aku tidak tau apa - apa soal coding mengcoding, aku hanya anak yang suka bermain game. Hingga aku sampai pada masa SMP. Masa SMP adalah masa yang sulit bagiku karena dimasa itu wabah virus Corona menyebar di seluruh ujung dunia termasuk Indonesia. Kita terpaksa untuk belajar dirumah atau daring. Karena hal itu, aku kehilangan semangat belajarku sampai nilaiku jelek semua. lalu di kelas 9 SMP, tatap muka pun diadakan lagi. Aku dengan segenap jiwa mempelajari apa yang aku tidak pelajari sebelumnya. Aku cukup mahir dengan pelajaran matematika. Sampai pada masa SMA kelas 10, aku bertemu dengan temanku dan memperlihatkan kepadaku apa itu coding. Disitu aku mulai belajar banyak hal mulai dari HTML, CSS, Javascript hingga masuk ke data base. Sekarang aku duduk di kelas 11 SMA, Ini akan menjadi awal dari hidupku untuk bisa menuju kesuksesan. 
-        </p>
+    <section id="about" class="about">
+        <h2>Tentang aku</h2>
+        <div class="about-content">
+            <p>
+            Halooo semuanyaaa...🙌 Kenalin nih, namaku Fatchul Rizqi, bisa dipanggil Rizqi. Aku duduk di bangku SMA. Aku adalah seorang programmer yang memiliki ketertarikan tinggi terhadap teknologi AI...🤖
+            Dulu aku tidak tau apa - apa soal coding mengcoding💻, aku hanya anak yang suka bermain game🎮. Hingga aku sampai pada masa SMP. Masa SMP adalah masa yang sulit bagiku karena dimasa itu wabah virus Corona🦠 menyebar di seluruh ujung dunia termasuk Indonesia. Kita terpaksa untuk belajar dirumah atau daring. Karena hal itu, aku kehilangan semangat belajarku sampai nilaiku jelek semua. lalu di kelas 9 SMP, tatap muka pun diadakan lagi. Aku dengan segenap jiwa mempelajari apa yang aku tidak pelajari sebelumnya. Aku cukup mahir dengan pelajaran matematika. Sampai pada masa SMA kelas 10, aku bertemu dengan temanku dan memperlihatkan kepadaku apa itu coding. Disitu aku mulai belajar banyak hal mulai dari HTML, CSS, Javascript hingga masuk ke data base. Sekarang aku duduk di kelas 11 SMA, Ini akan menjadi awal dari hidupku untuk bisa menuju kesuksesan.😊
+            </p>
+        </div>
     </section>
 
-    <section id="skills" class="section">
+    <section id="skills" class="skills">
         <h2>My Skills</h2>
-        <div class="skills">
-        <div><strong>Python</strong><p>Ini adalah bahasa pemrograman yang saat ini paling saya kuasai karena memang untuk menjadi AI devoloper, Python adalah bahasa yang tepat untuk membuat ide tersebut.</p></div>
-        <div><strong>HTML</strong><p>Menurut saya HTML adalah bahasa markup yang mesti dikuasai oleh programmer, karena ini adalah dasar untuk pembuatan website. Website ini pun dikembangkan dengan HTML.</p></div>
-        <div><strong>CSS</strong><p>CSS digunakan untuk mempercantik komponen - komponen yang ada di HTML. Jadi HTML dan CSS adalah merupakan satu kesatuan. Jika programmer ingin membuat suatu website, maka mereka harus tau dan paham dulu mengenai kedua bahasa ini.</p></div>
-        <div><strong>JavaScript</strong><p>Javascript merupakan bahasa yang cukup populer karena dia memiliki banyak sekali framework yang useable. Javascript juga berguna agar website kita menjadi dinamis. Untuk itu jika programmer ingin membuat suatu website yang interaktif, setidaknya mereka harus menguasai bahasa ini.</p></div>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fab fa-python"></i>
+                </div>
+                <h3>Python</h3>
+                <p>Ini adalah bahasa pemrograman yang saat ini paling saya kuasai karena memang untuk menjadi AI devoloper, Python adalah bahasa yang tepat untuk membuat ide tersebut.</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fab fa-html5"></i>
+                </div>
+                <h3>HTML</h3>
+                <p>Menurut saya HTML adalah bahasa markup yang mesti dikuasai oleh programmer, karena ini adalah dasar untuk pembuatan website. Website ini pun dikembangkan dengan HTML.</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fab fa-css3-alt"></i>
+                </div>
+                <h3>CSS</h3>
+                <p>CSS digunakan untuk mempercantik komponen - komponen yang ada di HTML. Jadi HTML dan CSS adalah merupakan satu kesatuan. Jika programmer ingin membuat suatu website, maka mereka harus tau dan paham dulu mengenai kedua bahasa ini.</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fab fa-js"></i>
+                </div>
+                <h3>JavaScript</h3>
+                <p>Javascript merupakan bahasa yang cukup populer karena dia memiliki banyak sekali framework yang useable. Javascript juga berguna agar website kita menjadi dinamis. Untuk itu jika programmer ingin membuat suatu website yang interaktif, setidaknya mereka harus menguasai bahasa ini.</p>
+            </div>
         </div>
     </section>
 
-    <section id="contact" class="section">
-        <h2>Contact me</h2>
-        <div class="social-icons">
-        <a href="#"><i data-feather="github"></i></a>
-        <a href="#"><i data-feather="instagram"></i></a>
-        <a href="#"><i data-feather="mail"></i></a>
+    <footer id="contact" class="footer">
+        <div class="social-links">
+            <a href="https://github.com/FatchulRizqi/FatchulRizqi" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://instagram.com/m.fatchulrizki/" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="wa/" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+            </a>
         </div>
-        <p>Created by Fatchul Rizqi | &copy; 2025</p>
-    </section>
+    </footer>
 
-    <script src="https://unpkg.com/feather-icons"></script>
-    <script>
-        feather.replace();
-    </script>
+    <script src="{% static 'script.js'%}"></script>
 </body>
-</html>
+</html> 
